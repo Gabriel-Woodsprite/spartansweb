@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss","app.css"],"names":[],"mappings":"AAIA,GACI,UCHJ","file":"app.css","sourcesContent":["// @use 'base';\r\n// @use 'layout';\r\n// @use 'componentes';\r\n\r\nh1{\r\n    color: aqua;\r\n}","h1 {\n  color: aqua;\n}"]}
