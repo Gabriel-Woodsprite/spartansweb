@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Inicio</title>
+    <title>Enviar Correo</title>
 </head>
+
 <body>
-    <h1>hola</h1> 
+    <h1>Formulario para enviar correo</h1>
+    <form action="enviar.php" method="POST">
+        <input type="email" name="email" placeholder="Correo del destinatario" required>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <button type="submit">Enviar correo</button>
+    </form>
 </body>
+
 </html>

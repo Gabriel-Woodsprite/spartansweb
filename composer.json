@@ -1,0 +1,25 @@
+{
+	"name": "gtzlo/spartans-web",
+	"type": "project",
+	"autoload": {
+		"psr-4": {
+			"MVC\\": "./",
+			"Controllers\\": "./controllers",
+			"Model\\": "./models",
+			"Classes\\": "./classes"
+		}
+	},
+	"authors": [
+		{
+			"name": "Gabriel G",
+			"email": "gtzloan@gmail.com"
+		},
+		{
+			"name": "Manemanito",
+			"email": "correo@gmail.com"
+		}
+	],
+	"require": {
+		"phpmailer/phpmailer": "^6.10"
+	}
+}
