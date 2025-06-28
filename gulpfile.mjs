@@ -30,7 +30,7 @@ const path = {
 	scss: "src/scss/**/*.scss",
 	js: "src/js/**/*.js",
 	img: "src/img/**/*.{png,jpg,jpeg,svg}",
-	buildImg: "build/img/",
+	buildImg: "public/build/img/",
 };
 
 // CSS Task
@@ -41,7 +41,7 @@ export function css() {
 		.pipe(sass())
 		.pipe(postcss([autoprefixer(), cssnano()]))
 		.pipe(sourcemaps.write("."))
-		.pipe(dest("build/css"));
+		.pipe(dest("public/build/css"));
 }
 
 // JS Task
@@ -52,7 +52,7 @@ export function javascript() {
 		.pipe(concat("bundle.js"))
 		.pipe(terser())
 		.pipe(sourcemaps.write("."))
-		.pipe(dest("build/js"));
+		.pipe(dest("public/build/js"));
 }
 
 // Optimizar imágenes
